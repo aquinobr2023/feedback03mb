@@ -9,7 +9,8 @@ export function App () {
       setNotaAvaliacao(nota)
   }
   return (
-    <div className="bg-gradient-dark text-white mx-6 p-6 rounded-2xl font-overpass">
+    notaAvaliacao ===0? (
+      <div className="bg-gradient-dark text-white mx-6 p-6 rounded-2xl font-overpass">
         <div className="bg-dark-blue w-fit p-4 rounded-full mb-4">
         <img src={starIcon} alt="Icon Star" />
       </div>
@@ -29,5 +30,10 @@ export function App () {
 
         <button className="bg-orange w-full uppercase tracking-1 font-bold rounded-3xl text-sm py-3">SUBMIT</button>
     </div>
-  );
+    ) : (
+      <div className="bg-gradient-dark text-white mx-6 p-6 rounded-2xl font-overpass">
+        <p>{notaAvaliacao}</p>
+    </div>
+    )
+  )
 }
