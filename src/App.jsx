@@ -1,10 +1,10 @@
-import iconstar from "./assets/icon-star.svg"
+import iconStar from "./assets/icon-star.svg"
 
 export function App () {
   return (
-    <div>
+    <div className="bg-gradient-dark text-white mx-6 p-6">
         <div>
-          <img scr={iconstar} alt = "icon star"/>
+          <img scr={iconStar} alt = "icon star"/>
       </div>
 
       <h1>How did we do?</h1>
