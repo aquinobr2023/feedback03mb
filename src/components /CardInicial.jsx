@@ -1,9 +1,18 @@
 import starIcon from "../assets/icon-star.svg";
 import { InputButton } from "./InputButton";
 
-export function CardInicial ({setNotaAvaliacao, handleSubmit }) {
+export function CardInicial ({setNotaAvaliacao,notaAvaliacao ,setSubmited }) {
    
-   
+    function handleSubmit(){
+        if(notaAvaliacao !== 0){
+          setSubmited(true)
+          return
+        }
+    
+        alert("Escolha uma nota")
+      }
+    
+
     return (
     
         <div className="bg-gradient-dark text-white mx-6 p-6 rounded-2xl font-overpass max-w-103">
@@ -25,7 +34,7 @@ export function CardInicial ({setNotaAvaliacao, handleSubmit }) {
          
         </div>
 
-        <button onClick={handleSubmit }  className="bg-orange w-full uppercase tracking-1 font-bold rounded-3xl text-sm py-3 hover:bg-white hover:text-orange cursor-pointer">SUBMIT</button>
+        <button onClick={handleSubmit }  className="bg-orange w-full uppercase tracking-1 font-bold rounded-3xl text-sm py-3 hover:bg-white hover:text-orange cursor-pointer duration-500">SUBMIT</button>
     </div>
     )
 }
