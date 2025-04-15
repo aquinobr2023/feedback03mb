@@ -1,8 +1,11 @@
 import starIcon from "../assets/icon-star.svg";
 import { InputButton } from "./InputButton";
 
-export function CardInicial ({hadleMudarNotaAvaliacao, handleSubmit }) {
+export function CardInicial ({setNotaAvaliacao, handleSubmit }) {
+   
+   
     return (
+    
         <div className="bg-gradient-dark text-white mx-6 p-6 rounded-2xl font-overpass max-w-103">
         <div className="bg-dark-blue w-fit p-4 rounded-full mb-4 ">
         <img src={starIcon} alt="Icon Star" />
@@ -14,11 +17,11 @@ export function CardInicial ({hadleMudarNotaAvaliacao, handleSubmit }) {
         All feedback is appreciated to help us improve our offering!</p>
 
         <div className="flex justify-between mb-6">
-            <InputButton hadleMudarNotaAvaliacao={hadleMudarNotaAvaliacao} value={1}/>
-            <InputButton hadleMudarNotaAvaliacao={hadleMudarNotaAvaliacao} value={2}/>
-            <InputButton hadleMudarNotaAvaliacao={hadleMudarNotaAvaliacao} value={3}/>
-            <InputButton hadleMudarNotaAvaliacao={hadleMudarNotaAvaliacao} value={4}/>
-            <InputButton hadleMudarNotaAvaliacao={hadleMudarNotaAvaliacao} value={5}/>
+            <InputButton setNotaAvaliacao={setNotaAvaliacao} value={1}/>
+            <InputButton setNotaAvaliacao={setNotaAvaliacao} value={2}/>
+            <InputButton setNotaAvaliacao={setNotaAvaliacao} value={3}/>
+            <InputButton setNotaAvaliacao={setNotaAvaliacao} value={4}/>
+            <InputButton setNotaAvaliacao={setNotaAvaliacao} value={5}/>
          
         </div>
 

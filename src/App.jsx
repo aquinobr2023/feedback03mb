@@ -25,7 +25,7 @@ export function App () {
   
   return (
     submited===false? (
-      <CardInicial hadleMudarNotaAvaliacao={hadleMudarNotaAvaliacao} handleSubmit={handleSubmit}/>
+      <CardInicial setNotaAvaliacao={setNotaAvaliacao} handleSubmit={handleSubmit}/>
     ) : (
      <CardFinal notaAvaliacao={notaAvaliacao}/>
     )
